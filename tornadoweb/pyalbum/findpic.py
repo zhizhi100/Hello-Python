@@ -19,7 +19,7 @@ t1 = time.time()
 cx = sqlite3.connect("pyalbum.db")
 for l in vol:
     if l:
-        print l
+        print(l)
         rootdir = l
         for parent,dirnames,filenames in os.walk(rootdir):   
              '''
@@ -44,4 +44,4 @@ for l in vol:
                         #print(hash)
 t2 = time.time()
 print (t2 - t1)
-print count
+print (count)
