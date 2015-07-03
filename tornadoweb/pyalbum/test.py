@@ -8,6 +8,9 @@ import wmi
 from tornadoweb.pyalbum.picdao import Picdao
 def test():
 
+    '''
+    钟平
+    '''
     img = Picdao()
     img.addfile("IMG_20130912_212354.jpg", "E:\weiyun")
     rows = img.queryfile()
