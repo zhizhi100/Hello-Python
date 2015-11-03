@@ -65,7 +65,7 @@ def demo():
     req=urllib2.Request(url,data,headers)
     response = opener.open(req)
     the_page = response.read()
-    print the_page 
+    print(the_page) 
 
 def login():
     url = 'http://localhost/upload/admin.php?'
@@ -85,7 +85,7 @@ def login():
     req=urllib2.Request(url,data,headers)
     response = opener.open(req)
     the_page = response.read()
-    print the_page
+    print(the_page)
     
 def reg():
     opener = urllib2.build_opener()
@@ -96,12 +96,12 @@ def reg():
     '''
     values = {'formhash':'b9437c7e','newusername':'zhp346','newpassword':'123456','newemail':'asdfsdfds346@dsf1d.com','newgroupid':'10','emailnotify':'0','addsubmit':'提交'}
     data = urllib.urlencode(values)
-    print data
+    print(data)
     '''req = opener.open(fullurl, data, timeout)(url, data)
     response = urllib2.urlopen(req)'''
     response = opener.open(url, data)
     the_page = response.read()
-    print the_page
+    print(the_page)
 
 if __name__ == '__main__':
     #reg()
